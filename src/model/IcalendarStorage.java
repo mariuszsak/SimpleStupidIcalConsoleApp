@@ -4,13 +4,13 @@ import java.util.UUID;
 
 public class IcalendarStorage {
 
-    private String eventName;
-    private String eventStart;
-    private String eventEnd;
-    private UUID uuid;
-    private String tstamp;
-    private String eventLocation;
-    private String eventDescription;
+    private static String eventName;
+    private static String eventStart;
+    private static String eventEnd;
+    private static UUID uuid;
+    private static String tstamp;
+    private static String eventLocation;
+    private static String eventDescription;
 
 
     public IcalendarStorage() {
