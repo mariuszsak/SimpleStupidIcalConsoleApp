@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class GetFromConsoleAndSetToModelClass {
 
-    public void getAndSetItems(IcalendarStorage icalendarStorage) {
+    public static void getAndSetItems(IcalendarStorage icalendarStorage) {
         Scanner s = new Scanner(System.in);
 
         System.out.println("Podaj nazwę wydarzenia:");

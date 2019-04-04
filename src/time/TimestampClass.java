@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class TimestampClass {
 
-    public void tstamp(IcalendarStorage icalendarStorage) {
+    public static void tstamp(IcalendarStorage icalendarStorage) {
         String tstamp = new SimpleDateFormat("yyyyMMdd'T'HHmmss").format(new Date());
         icalendarStorage.setTstamp(tstamp);
     }

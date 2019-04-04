@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 
 public class SaveToFileClass {
 
-    public void saveICalendarItem(IcalendarStorage icalendarStorage) throws IOException {
+    public static void saveICalendarItem(IcalendarStorage icalendarStorage) throws IOException {
         PrintWriter pw = new PrintWriter(new FileWriter("out.ics"));
 
         pw.write("BEGIN:VCALENDAR\n");
