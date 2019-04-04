@@ -15,13 +15,13 @@ public class SaveToFileClass {
         pw.write("VERSION:2.0\n");
         pw.write("PRODID:MS\n");
         pw.write("BEGIN:VEVENT\n");
-        pw.write(icalendarStorage.getUuid() + "\n");
-        pw.write(icalendarStorage.getTstamp() + "\n");
-        pw.write(icalendarStorage.getEventStart() + "\n");
-        pw.write(icalendarStorage.getEventEnd() + "\n");
-        pw.write(icalendarStorage.getEventName() + "\n");
-        pw.write(icalendarStorage.getEventLocation() + "\n");
-        pw.write(icalendarStorage.getEventDescription() + "\n");
+        pw.write("UID:"+icalendarStorage.getUuid() + "\n");
+        pw.write("DTSTAMP:"+icalendarStorage.getTstamp() + "\n");
+        pw.write("DTSTART:"+icalendarStorage.getEventStart() + "\n");
+        pw.write("DTEND:"+icalendarStorage.getEventEnd() + "\n");
+        pw.write("SUMMARY:"+icalendarStorage.getEventName() + "\n");
+        pw.write("LOCATION:"+icalendarStorage.getEventLocation() + "\n");
+        pw.write("DESCRIPTION:"+icalendarStorage.getEventDescription() + "\n");
         pw.write("END:VEVENT\n");
         pw.write("END:VCALENDAR\n");
 

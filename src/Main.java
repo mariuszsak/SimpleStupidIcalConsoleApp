@@ -1,6 +1,7 @@
 import io.GetFromConsoleAndSetToModelClass;
 import io.SaveToFileClass;
 import model.IcalendarStorage;
+import time.TimestampClass;
 import uuid.UUIDClass;
 
 import java.io.IOException;
@@ -18,6 +19,9 @@ public class Main {
     private void setAllValues() {
         GetFromConsoleAndSetToModelClass getFromConsoleAndSetToModelClass = new GetFromConsoleAndSetToModelClass();
         getFromConsoleAndSetToModelClass.getAndSetItems(icalendarStorage);
+
+        TimestampClass timestampClass = new TimestampClass();
+        timestampClass.tstamp(icalendarStorage);
 
         UUIDClass uuidClass = new UUIDClass();
         uuidClass.generateUUID(icalendarStorage);

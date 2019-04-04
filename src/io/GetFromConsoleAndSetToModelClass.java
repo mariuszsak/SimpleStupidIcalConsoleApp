@@ -13,11 +13,11 @@ public class GetFromConsoleAndSetToModelClass {
         String eN = s.nextLine();
         icalendarStorage.setEventName(eN);
 
-        System.out.println("Podaj miejsce  wydarzenia:");
+        System.out.println("Podaj miejsce wydarzenia:");
         String eL = s.nextLine();
         icalendarStorage.setEventLocation(eL);
 
-        System.out.println("Podaj miejsce  wydarzenia:");
+        System.out.println("Podaj opis wydarzenia:");
         String eD = s.nextLine();
         icalendarStorage.setEventDescription(eD);
 

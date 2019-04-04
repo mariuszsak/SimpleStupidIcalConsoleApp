@@ -1,12 +1,14 @@
 package time;
 
+import model.IcalendarStorage;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TimestampClass {
 
-    private String tstamp() {
+    public void tstamp(IcalendarStorage icalendarStorage) {
         String tstamp = new SimpleDateFormat("yyyyMMdd'T'HHmmss").format(new Date());
-        return tstamp;
+        icalendarStorage.setTstamp(tstamp);
     }
 }
